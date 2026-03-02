@@ -1,4 +1,5 @@
-package com.decomp.rsdkv4;
+package com.decomp.rsdkv4S1;
+package com.decomp.rsdkv4S2;
 
 import android.Manifest;
 import android.content.Context;
@@ -37,11 +38,12 @@ public class RSDKv4 extends SDLActivity {
     public String getBasePath() {
         Context c = getApplicationContext();
         requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
-        String p = Environment.getExternalStorageDirectory().getAbsolutePath() + "/RSDK/v4/s1";
-        String p = Environment.getExternalStorageDirectory().getAbsolutePath() + "/RSDK/v4/s2";
+        String p = Environment.getExternalStorageDirectory().getAbsolutePath() + "/RSDK/v4S1";
+        String p = Environment.getExternalStorageDirectory().getAbsolutePath() + "/RSDK/v4S2";
         //getExternalStorageDirectory is deprecated. I do not care.
         new File(p).mkdirs();
         return p + "/";
     }
 }
+
 
