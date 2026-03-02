@@ -9,7 +9,7 @@ import java.io.File;
 import org.libsdl.app.*;
 
 
-public class RSDKv4 extends SDLActivity {
+public class RSDKv4S1 extends SDLActivity {
     @Override
     protected void onStart() {
         super.onStart();
