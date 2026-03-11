@@ -56,7 +56,8 @@ android {
             variant.outputs.each { output ->
                 def outputFile = output.outputFile
                 if (outputFile != null && outputFile.name.endsWith(".aar")) {
-                    def fileName = "com.decomp.rsdkv4.aar"
+                    def fileName = "com.decomp.rsdkv4s1.aar"
+                    def fileName = "com.decomp.rsdkv4s2.aar"
                     output.outputFile = new File(outputFile.parent, fileName)
                 }
             }
